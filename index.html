@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,55 +14,50 @@
       color: #333;
     }
     header {
-      background: #ffeef1;
-      padding: 60px 20px;
+      background: #ffffff;
       text-align: center;
+      padding: 30px 20px 10px;
     }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      margin: 0 0 10px;
+    header img {
+      height: 60px;
     }
     header p {
-      font-size: 1.1em;
-      margin: 0;
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #555;
     }
-    .hero {
+    .hero-video {
       text-align: center;
-      padding: 30px 20px;
+      margin-top: 20px;
     }
-    .hero img {
-      max-width: 90%;
-      border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    .hero-video img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 12px;
     }
     .section {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      line-height: 1.9;
     }
     .section h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1.8em;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
-    .cta {
-      text-align: center;
-      padding: 40px 20px;
-      background: #fbe4ea;
+    .lang-toggle {
+      text-align: right;
+      margin: 10px 20px;
     }
-    .cta button {
-      background: #d6246c;
-      color: white;
-      border: none;
-      font-size: 1.1em;
-      padding: 14px 30px;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background 0.3s;
+    .lang-toggle a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #888;
+      font-size: 0.9em;
     }
-    .cta button:hover {
-      background: #b81e5e;
+    .lang-toggle a:hover {
+      color: #000;
     }
     footer {
       text-align: center;
@@ -73,36 +68,43 @@
   </style>
 </head>
 <body>
+  <div class="lang-toggle">
+    <a href="#ko">한국어</a> | <a href="#en">English</a>
+  </div>
+
   <header>
-    <h1>Be the MUSE</h1>
+    <img src="logo_bethemuse.png" alt="Be the MUSE Logo">
     <p>With Us, You are already MUSE</p>
   </header>
 
-  <section class="hero">
-    <img src="https://via.placeholder.com/600x400?text=Your+Product+Image" alt="Product">
-  </section>
+  <div class="hero-video">
+    <img src="brand_mood_video.gif" alt="Brand Mood Video">
+  </div>
 
-  <section class="section">
-    <h2>Our Philosophy</h2>
+  <section class="section" id="ko">
+    <h2>우리의 철학</h2>
     <p>
-      We began with a question — “Is there a truly good cosmetic for the skin?”
-      Instead of chasing trends, we focused on honest science and meaningful ingredients.
-      At Be the MUSE, we empower skin to shine from within.
+      Be the MUSE는 “정말 좋은 화장품이 있을까?”라는 질문에서 출발했습니다.<br><br>
+      우리는 유행을 좇기보다는 본질에 집중했습니다. 고객의 피부가 스스로 빛날 수 있도록,  
+      효과적인 성분과 정직한 과학을 기반으로 제품을 만듭니다.<br><br>
+      거짓 없는 처방, 과장 없는 표현.  
+      우리가 추구하는 아름다움은 결과로 증명됩니다.<br><br>
+      브랜드가 아닌, 당신 자신이 Muse가 되는 순간을 위해.  
+      Be the MUSE는 진심을 다한 연구를 멈추지 않습니다.
     </p>
   </section>
 
-  <section class="section">
-    <h2>Key Products</h2>
-    <ul>
-      <li>Cellencia Intensive Bio Ampoule</li>
-      <li>Salmon Return Ampoule</li>
-      <li>Turn Over Night Cream</li>
-    </ul>
-  </section>
-
-  <section class="cta">
-    <p>Want to work with us or distribute our products?</p>
-    <button>Contact Us</button>
+  <section class="section" id="en">
+    <h2>Our Philosophy</h2>
+    <p>
+      Be the MUSE began with a question — “Is there a truly good cosmetic?”<br><br>
+      Rather than chasing trends, we chose to focus on essence.  
+      We craft our formulas to help your skin shine on its own — powered by effective ingredients and honest science.<br><br>
+      No exaggeration. No false promises.  
+      We believe beauty should speak through real results.<br><br>
+      Because you are not a canvas for brands.  
+      You are already the Muse.
+    </p>
   </section>
 
   <footer>
